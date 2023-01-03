@@ -14,7 +14,7 @@
 bl_info = {
     "name": "Auto Bone Controller",
     "author": "Antonio Vazquez (antonioya)",
-    "version": (2, 0, 0),
+    "version": (2, 0, 1),
     "blender": (2, 80, 0),
     "location": "View3D > Properties",
     "description": "Add controllers for bendy bones automatically",

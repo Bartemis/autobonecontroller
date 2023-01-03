@@ -147,13 +147,12 @@ class CLS_OT_Operator(bpy.types.Operator):
         ob.data.bones[main_name + txt_b].use_deform = False
         
         if scene.auto_bone_list_a != "*NONE":
-            
             ba.custom_shape = bpy.data.objects[scene.auto_bone_list_a]
-            ba.custom_shape_scale = scene.auto_bone_scale_a
+            ba.custom_shape_scale_xyz = (scene.auto_bone_scale_a, scene.auto_bone_scale_a, scene.auto_bone_scale_a)
 
         if scene.auto_bone_list_b != "*NONE":
             bb.custom_shape = bpy.data.objects[scene.auto_bone_list_b]
-            bb.custom_shape_scale = scene.auto_bone_scale_b
+            bb.custom_shape_scale_xyz = (scene.auto_bone_scale_b, scene.auto_bone_scale_b, scene.auto_bone_scale_b)
 
     # ------------------------------
     # Set constraintlock and deform
